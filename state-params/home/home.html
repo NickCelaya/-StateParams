@@ -1,0 +1,9 @@
+<h1 style='margin-left: 25px'>User Data:</h1>
+
+<section style='margin-left: 25px' ng-repeat='user in users'>
+
+    <p class='lead'>Id: {{ user.id }}</p>
+    <p class='lead'>Name: {{ user.name }}</p>
+    <button ui-sref="details({id: user.id})" style='margin-bottom: 50px' class='btn btn-default'>Details for {{ user.name }}</button>
+
+</section>
